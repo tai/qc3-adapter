@@ -1,0 +1,279 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Namecard Type1"
+Date "2019-08-18"
+Rev "1"
+Comp "Taisuke Yamada"
+Comment1 "My namecard"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM317L_TO92 U1
+U 1 1 5D58F2AA
+P 4350 3300
+F 0 "U1" H 4200 3050 50  0000 C CNN
+F 1 "LM317L" H 4300 3450 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4350 3525 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 4350 3300 50  0001 C CNN
+	1    4350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D58F57E
+P 4800 3450
+F 0 "R1" H 4870 3496 50  0000 L CNN
+F 1 "47K" H 4870 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4730 3450 50  0001 C CNN
+F 3 "~" H 4800 3450 50  0001 C CNN
+	1    4800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5D58F78E
+P 5400 3450
+F 0 "R5" H 5470 3496 50  0000 L CNN
+F 1 "47K" H 5470 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5330 3450 50  0001 C CNN
+F 3 "~" H 5400 3450 50  0001 C CNN
+	1    5400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D58F8FB
+P 5100 3450
+F 0 "R3" H 5170 3496 50  0000 L CNN
+F 1 "47K" H 5170 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5030 3450 50  0001 C CNN
+F 3 "~" H 5100 3450 50  0001 C CNN
+	1    5100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D58FB00
+P 5700 3450
+F 0 "R6" H 5770 3496 50  0000 L CNN
+F 1 "1K" H 5770 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5630 3450 50  0001 C CNN
+F 3 "~" H 5700 3450 50  0001 C CNN
+	1    5700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5D5906BB
+P 5700 3900
+F 0 "SW2" V 5654 4048 50  0000 L CNN
+F 1 "UP" V 5745 4048 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5700 4100 50  0001 C CNN
+F 3 "~" H 5700 4100 50  0001 C CNN
+	1    5700 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5D5924DE
+P 3000 3300
+F 0 "J1" H 3057 3767 50  0000 C CNN
+F 1 "USB_IN" H 3057 3676 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105133-0001" H 3150 3250 50  0001 C CNN
+F 3 "~" H 3150 3250 50  0001 C CNN
+	1    3000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D5966D3
+P 4800 3950
+F 0 "R2" H 4870 3996 50  0000 L CNN
+F 1 "47K" H 4870 3905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4730 3950 50  0001 C CNN
+F 3 "~" H 4800 3950 50  0001 C CNN
+	1    4800 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3100 3450 3100
+Wire Wire Line
+	4800 3700 4350 3700
+Wire Wire Line
+	4350 3700 4350 3600
+$Comp
+L power:GND #PWR01
+U 1 1 5D59A0FD
+P 3000 5500
+F 0 "#PWR01" H 3000 5250 50  0001 C CNN
+F 1 "GND" H 3005 5327 50  0000 C CNN
+F 2 "" H 3000 5500 50  0001 C CNN
+F 3 "" H 3000 5500 50  0001 C CNN
+	1    3000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3850 3000 5400
+Connection ~ 3000 3850
+Wire Wire Line
+	2900 3850 3000 3850
+Wire Wire Line
+	3300 3400 3550 3400
+Wire Wire Line
+	3850 3400 3850 4350
+Wire Wire Line
+	3300 3300 3650 3300
+Wire Wire Line
+	3950 3300 3950 4250
+Wire Wire Line
+	4800 3300 5100 3300
+Connection ~ 5100 3300
+Wire Wire Line
+	5100 3300 5400 3300
+$Comp
+L Device:R R4
+U 1 1 5D5A1074
+P 5400 4500
+F 0 "R4" H 5470 4546 50  0000 L CNN
+F 1 "10K" H 5470 4455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5330 4500 50  0001 C CNN
+F 3 "~" H 5400 4500 50  0001 C CNN
+	1    5400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3300 4050 3100
+Wire Wire Line
+	4650 3300 4800 3300
+Connection ~ 4800 3300
+Wire Wire Line
+	4800 5400 4800 4100
+Wire Wire Line
+	5700 4100 5700 4250
+Wire Wire Line
+	5700 3600 5700 3700
+Wire Wire Line
+	5400 3300 5700 3300
+Connection ~ 5400 3300
+Connection ~ 5700 3300
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5D5B6173
+P 6900 3200
+F 0 "J2" H 6980 3192 50  0000 L CNN
+F 1 "OUT" H 6980 3101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 6900 3200 50  0001 C CNN
+F 3 "~" H 6900 3200 50  0001 C CNN
+	1    6900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3100 6700 3100
+Wire Wire Line
+	5700 3300 6700 3300
+Wire Wire Line
+	6700 3200 6450 3200
+Wire Wire Line
+	6450 3200 6450 3400
+Wire Wire Line
+	6450 3400 6700 3400
+Wire Wire Line
+	5400 5400 6450 5400
+Wire Wire Line
+	6450 5400 6450 3400
+Connection ~ 5400 5400
+Connection ~ 6450 3400
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D59073E
+P 5100 4950
+F 0 "SW1" V 5054 5098 50  0000 L CNN
+F 1 "DOWN" V 5145 5098 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5100 5150 50  0001 C CNN
+F 3 "~" H 5100 5150 50  0001 C CNN
+	1    5100 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 5400 5100 5400
+Wire Wire Line
+	5100 3600 5100 4350
+Wire Wire Line
+	5100 4350 3850 4350
+Connection ~ 5100 4350
+Connection ~ 5100 5400
+Wire Wire Line
+	5100 5400 5400 5400
+Wire Wire Line
+	5400 4250 3950 4250
+Wire Wire Line
+	5400 4250 5400 4350
+Connection ~ 5400 4250
+Wire Wire Line
+	5700 4250 5400 4250
+Wire Wire Line
+	5100 5150 5100 5400
+Wire Wire Line
+	5400 4650 5400 5400
+Wire Wire Line
+	5100 4350 5100 4750
+Wire Wire Line
+	3000 3700 3000 3850
+Wire Wire Line
+	2900 3700 2900 3850
+Wire Wire Line
+	4800 3800 4800 3700
+Wire Wire Line
+	5400 3600 5400 4250
+Wire Wire Line
+	4800 3700 4800 3600
+Connection ~ 4800 3700
+Connection ~ 3000 5400
+Wire Wire Line
+	3000 5400 3000 5500
+Wire Wire Line
+	3000 5400 4800 5400
+Wire Wire Line
+	3300 3500 3750 3500
+Wire Wire Line
+	3750 3500 3750 3850
+Wire Wire Line
+	3000 3850 3750 3850
+Connection ~ 4050 3100
+Connection ~ 4800 5400
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 5D5F871A
+P 3550 2700
+F 0 "J3" V 3612 2412 50  0000 R CNN
+F 1 "USB_AUX" V 3703 2412 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3550 2700 50  0001 C CNN
+F 3 "~" H 3550 2700 50  0001 C CNN
+	1    3550 2700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3450 2900 3450 3100
+Connection ~ 3450 3100
+Wire Wire Line
+	3450 3100 4050 3100
+Wire Wire Line
+	3550 2900 3550 3400
+Connection ~ 3550 3400
+Wire Wire Line
+	3550 3400 3850 3400
+Wire Wire Line
+	3650 2900 3650 3300
+Connection ~ 3650 3300
+Wire Wire Line
+	3650 3300 3950 3300
+Wire Wire Line
+	3750 2900 3750 3500
+Connection ~ 3750 3500
+$EndSCHEMATC
