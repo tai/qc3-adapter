@@ -15,11 +15,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Namecard Type1"
-Date "2019-08-18"
-Rev "1"
+Title "QC3.0 to 3.6-20V DC Adapter"
+Date "2019-08-29"
+Rev "1.1"
 Comp "Taisuke Yamada"
-Comment1 "My namecard"
+Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -33,17 +33,6 @@ F 1 "TL431" H 4150 4450 50  0000 C CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 4150 4400 50  0001 C CIN
 F 3 "" H 4150 4550 50  0001 C CNN
 	1    4150 4550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Conn_01x04 J2
-U 1 1 5D5CC65A
-P 3350 1650
-F 0 "J2" H 3350 1850 50  0000 C CNN
-F 1 "USB_ALT" H 3350 1350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3350 1650 50  0001 C CNN
-F 3 "" H 3350 1650 50  0001 C CNN
-	1    3350 1650
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -203,12 +192,12 @@ $EndComp
 $Comp
 L PWR_FLAG #FLG01
 U 1 1 5D5D1DEF
-P 2850 1750
-F 0 "#FLG01" H 2850 1825 50  0001 C CNN
-F 1 "PWR_FLAG" H 2850 1900 50  0000 C CNN
-F 2 "" H 2850 1750 50  0001 C CNN
-F 3 "" H 2850 1750 50  0001 C CNN
-	1    2850 1750
+P 2800 1750
+F 0 "#FLG01" H 2800 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 2800 1900 50  0000 C CNN
+F 2 "" H 2800 1750 50  0001 C CNN
+F 3 "" H 2800 1750 50  0001 C CNN
+	1    2800 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -274,14 +263,14 @@ Wire Wire Line
 Wire Wire Line
 	3550 1850 3550 2850
 Wire Wire Line
-	3250 2050 3250 1850
-Connection ~ 3250 2050
+	3150 2050 3150 1850
+Connection ~ 3150 2050
 Wire Wire Line
-	3350 2350 3350 1850
-Connection ~ 3350 2350
+	3250 2350 3250 1850
+Connection ~ 3250 2350
 Wire Wire Line
-	3450 2250 3450 1850
-Connection ~ 3450 2250
+	3350 2250 3350 1850
+Connection ~ 3350 2250
 Connection ~ 5500 4950
 Wire Wire Line
 	5500 5650 5500 5500
@@ -351,15 +340,12 @@ Wire Wire Line
 Wire Wire Line
 	2150 5650 2150 5550
 Wire Wire Line
-	2850 1750 2850 2050
-Connection ~ 2850 2050
+	2800 1750 2800 2050
+Connection ~ 2800 2050
 Wire Wire Line
 	5000 5450 5100 5450
 Wire Wire Line
-	2750 2450 2800 2450
-Wire Wire Line
-	2800 2450 2800 2850
-Connection ~ 2800 2850
+	2750 2450 3450 2450
 Wire Wire Line
 	4150 4850 4150 4650
 Wire Wire Line
@@ -432,4 +418,17 @@ Wire Wire Line
 Wire Wire Line
 	5100 5150 5100 4950
 Connection ~ 5100 4950
+$Comp
+L Conn_01x05 J2
+U 1 1 5D67D591
+P 3350 1650
+F 0 "J2" H 3350 1950 50  0000 C CNN
+F 1 "USB_ALT" H 3350 1350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 3350 1650 50  0001 C CNN
+F 3 "" H 3350 1650 50  0001 C CNN
+	1    3350 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 2450 3450 1850
 $EndSCHEMATC
