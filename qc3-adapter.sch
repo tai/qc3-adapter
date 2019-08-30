@@ -9,7 +9,7 @@ LIBS:power
 LIBS:modules
 LIBS:device
 LIBS:switches
-LIBS:pcb-namecard-cache
+LIBS:qc3-adapter-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
